@@ -1,0 +1,16 @@
+/* ------------------------------------------------
+                    NOISE
+--------------------------------------------------- */
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: 0.045;
+  pointer-events: none;
+  background: url("../images/noise.gif");
+  z-index: 10;
+}

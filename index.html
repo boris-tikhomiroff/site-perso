@@ -5,8 +5,263 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boris Tikhomiroff || Porfolio</title>
+    <link rel="stylesheet" href="src/style/main.css" />
+    <!-- <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script> -->
   </head>
-  <body>
-    <h1>Porfolio</h1>
+  <body class="loading">
+    <!-------------------------------- NOISE -------------------------------->
+    <div class="noise"></div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">b.</a></li>
+          <div class="nav__container">
+            <li><a href="#">Works</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+          </div>
+          <li><p>(scroll)</p></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div data-scroll>
+        <section class="hero">
+          <h1>
+            <span>Boris</span>
+            <span>Tikhomiroff</span>
+            <span>Web developper,</span>
+            <span>based in France.</span>
+          </h1>
+        </section>
+
+        <section class="about">
+          <p>
+            I am a french developer with a great taste for design and motion. I
+            graduated from the interactive design department of Gobelins school
+            in 2013, and I’ve been building websites and applications with love
+            and passion since then.
+          </p>
+        </section>
+
+        <div class="content">
+          <div class="item" id="works">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t1"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Boutique en Ligne</h2>
+              <p class="item__caption-copy">
+                Great turbulent clouds emerged into consciousness citizens.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t2"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Projet Hackathon</h2>
+              <p class="item__caption-copy">
+                Brain is the seed of intelligence the sky calls to us a very
+                small stage.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t3"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Reservation Salle</h2>
+              <p class="item__caption-copy">
+                Cosmos encyclopaedia galactica a billion trillion culture cosmic
+                ocean.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t1"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Blog Voyage</h2>
+              <p class="item__caption-copy">
+                Network of wormholes dream of the mind's eye finite but
+                unbounded concept.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t2"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Module de Connexion</h2>
+              <p class="item__caption-copy">
+                Two ghostly white figures in coveralls and helmets are softly
+                dancing vastness.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t3"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Livre d'Or</h2>
+              <p class="item__caption-copy">
+                Vastness is bearable only through love invent the universe
+                vanquish.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img-wrap">
+              <a
+                href="https://github.com/codrops/SmoothScrollAnimations/blob/master/css/base.css"
+                target="_blank"
+              >
+                <div class="item__img item__img--t1"></div>
+              </a>
+            </div>
+            <div class="item__caption">
+              <h2 class="item__caption-title">Blog Botanique</h2>
+              <p class="item__caption-copy">
+                The only home we've ever known concept of the number one.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section id="skills" class="skills">
+          <div class="grid">
+            <div class="skills__heading">
+              <h3>Skills</h3>
+              <p>
+                For over 10 years, I’ve nurtured a strong front-end expertise
+                that puts the user first and delivers top notch UX using cutting
+                edge technology. From startups to freelance to web agencies
+                around the world I live and breathe for the Web and interfaces
+                in general.
+              </p>
+            </div>
+
+            <!-- <div class="skills__competence">
+              <div class="skills__section">
+                <h3>Back-end</h3>
+                <section>
+                  <p>test</p>
+                  <p>test</p>
+                  <p>test</p>
+                </section>
+              </div>
+              <hr />
+              <div class="skills__section">
+                <h3>Back-end</h3>
+                <section>
+                  <p>test</p>
+                  <p>test</p>
+                  <p>test</p>
+                </section>
+              </div>
+            </div> -->
+            <div class="skills__competence">
+              <div>
+                <h3>Front-End</h3>
+                <p>
+                  JAVASCRIPT / HTML / CSS / SASS / WEBGL / FIGMA / WORDPRESS /
+                  JQUERY
+                </p>
+                <!-- <img
+                    src="/public/images/reshot-icon-bottom-right-arrow-M9C2HY3DFX.svg"
+                  /> -->
+              </div>
+              <div>
+                <h3>Back-End</h3>
+                <p>PHP / MySQL / GIT / DATABASE DESIGN / MVC</p>
+                <!-- <img
+                    src="/public/images/reshot-icon-bottom-right-arrow-M9C2HY3DFX.svg"
+                  /> -->
+              </div>
+              <div>
+                <h3>Interest</h3>
+                <p>THREE JS / REACT / SYMPHONY</p>
+                <!-- <img
+                    src="/public/images/reshot-icon-bottom-right-arrow-M9C2HY3DFX.svg"
+                  /> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <p class="contact__text">Contact me</p>
+
+          <div class="logo">
+            <p>linkedin</p>
+            <p>github</p>
+            <p>mail</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="src/js/imagesloaded.pkgd.min.js"></script>
+    <script src="src/js/demo.js"></script>
+    <script src="src/js/mouseFollower.js"></script>
   </body>
 </html>
