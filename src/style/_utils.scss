@@ -14,3 +14,54 @@
   background: url("../images/noise.gif");
   z-index: 10;
 }
+
+/* ------------------------------------------------
+                      CURSOR
+  --------------------------------------------------- */
+
+#cursor {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  // mix-blend-mode: difference;
+}
+
+.cursor__circle {
+  background-image: url("../images/Red_asterisk.68f436c5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 72px;
+  height: 72px;
+  margin-top: -50%;
+  margin-left: -50%;
+  // border-radius: 50%;
+  // border: solid 2px rgba(0, 0, 0, 1);
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+
+  animation: rotate 3s linear infinite;
+
+  filter: opacity(70%);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  #cursor {
+    display: none;
+  }
+}
