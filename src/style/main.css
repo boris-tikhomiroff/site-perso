@@ -369,6 +369,13 @@ h1 {
           filter: grayscale(0%);
 }
 
+@media only screen and (max-width: 768px) {
+  .item__img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+}
+
 .item__img--t1 {
   --overflow: 60px;
 }
@@ -557,6 +564,9 @@ h1 {
 
 .contact__text {
   padding: 0 16vw;
+  font-size: clamp(18px, 24px, 152px);
+  font-weight: normal;
+  font-family: "telegraf";
 }
 
 .logo {
@@ -572,10 +582,5 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.ac {
-  text-decoration: underline;
-  color: red;
 }
 /*# sourceMappingURL=main.css.map */

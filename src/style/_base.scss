@@ -221,6 +221,12 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .item__img {
+    filter: grayscale(0%);
+  }
+}
+
 .item__img--t1 {
   --overflow: 60px;
 }
@@ -362,6 +368,9 @@ h1 {
 }
 .contact__text {
   padding: 0 16vw;
+  font-size: clamp(18px, 24px, 152px);
+  font-weight: normal;
+  font-family: "telegraf";
 }
 
 .logo {
@@ -369,9 +378,4 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.ac {
-  text-decoration: underline;
-  color: red;
 }
