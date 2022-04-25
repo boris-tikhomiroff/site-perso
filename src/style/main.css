@@ -24,14 +24,14 @@
   src: url("../fonts/gallient-cufonfonts/GallientRegular-eZoMp.ttf");
 }
 
-@font-face {
-  font-family: "kenoky";
-  src: url("/public/fonts/kenoky/KenokyLight.ttf");
-}
-
-@font-face {
-  font-family: "C4";
-  src: url("/public/fonts/C4/C4v4-Regular.woff");
+:root {
+  --title-font: "gallient";
+  --color-text: #1c1b1b;
+  --color-bg: #f3f1ec;
+  --color-link: #b07656;
+  --color-link-hover: #000;
+  --color-deco: #e4dbd6;
+  --res: calc(0.01 * 10vmin);
 }
 
 /* ------------------------------------------------
@@ -65,12 +65,6 @@
 --------------------------------------------------- */
 body {
   margin: 0;
-  --color-text: #1c1b1b;
-  --color-bg: #efe6e1;
-  --color-link: #b07656;
-  --color-link-hover: #000;
-  --color-deco: #e4dbd6;
-  --res: calc(0.01 * 10vmin);
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: paralucent, sans-serif;
@@ -163,7 +157,6 @@ header {
   z-index: 100;
   width: 100%;
   padding: 32px;
-  font-family: "telegraf";
 }
 
 nav {
@@ -215,11 +208,11 @@ ul p {
   min-height: 100vh;
   padding: 0 0 0 10vw;
   margin: 0 auto;
-  font-family: "gallient";
+  font-family: var(--title-font);
 }
 
 h1 {
-  font-size: clamp(35px, 7vw, 120px);
+  font-size: clamp(35px, 15vw, 192px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,21 +233,26 @@ h1 {
                     ABOUT
 --------------------------------------------------- */
 .about {
-  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 8vw 0 18vw 0;
+  font-size: clamp(18px, 18px, 152px);
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 8vw 0 35vw 0;
+  }
 }
 
 .about p {
   width: 80%;
-  padding: 0 25vw;
+  padding: 0 20vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -277,7 +275,7 @@ h1 {
   counter-increment: figure;
   content: counter(figure, decimal-leading-zero);
   position: absolute;
-  font-family: paralucent, sans-serif;
+  font-family: var(--title-font);
   font-size: 10rem;
   color: var(--color-deco);
   bottom: calc(100% - 3rem);
@@ -388,7 +386,7 @@ h1 {
 }
 
 .item__caption-title {
-  font-family: paralucent, sans-serif;
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 3rem;
   margin: 0;
@@ -441,6 +439,7 @@ h1 {
   line-height: 5.46rem;
   font-size: 5.46rem;
   font-weight: normal;
+  font-family: var(--title-font);
 }
 
 .skills__competence {
@@ -504,6 +503,8 @@ h1 {
   font-size: 36px;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
+  font-family: var(--title-font);
+  color: rgba(0, 0, 0, 0.737);
 }
 
 .skills__competence div p {
@@ -562,7 +563,7 @@ h1 {
 --------------------------------------------------- */
 .contact {
   min-height: 50vh;
-  background-color: green;
+  background-color: #1f1f1f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,16 +571,25 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: white;
 }
 
-.contact__text {
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 18;
       -ms-flex: 18;
           flex: 18;
 }
 
 .logo {
-  background-color: yellow;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
