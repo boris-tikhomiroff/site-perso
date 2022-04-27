@@ -126,9 +126,20 @@ body {
   background-color: var(--color-bg);
 }
 
+.page-wrapper {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
 a {
   text-decoration: none;
   color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
   outline: none;
 }
 
@@ -183,8 +194,8 @@ nav ul {
 
 ul p {
   position: fixed;
-  bottom: 5vh;
-  left: 10vw;
+  top: 90vh;
+  right: 90vw;
 }
 
 .nav__container {
@@ -230,6 +241,10 @@ h1 {
 @media only screen and (max-width: 768px) {
   li a {
     font-size: clamp(6px, 14px, 16px);
+  }
+  ul p {
+    position: fixed;
+    right: 75vw;
   }
 }
 
@@ -551,6 +566,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -563,7 +582,7 @@ h1 {
 }
 
 .contact__text {
-  padding: 0 16vw;
+  padding: 5vw 16vw;
   font-size: clamp(18px, 24px, 152px);
   font-weight: normal;
   font-family: "telegraf";
@@ -582,5 +601,18 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo li {
+  padding: 0 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo li {
+    padding: 0 0;
+  }
+  .contact__text {
+    padding: 15vw 16vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

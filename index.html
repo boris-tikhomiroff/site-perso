@@ -12,215 +12,225 @@
     <meta property="og:image" content="/src/images/boris-tikhomiroff_landing.png">
 
     <link rel="stylesheet" href="src/style/main.css" />
+    <link rel="stylesheet" href="src/style/locomotive-scroll.css">
+    <css></css>
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png">
   </head>
-  <body class="loading">
-    <!-------------------------------- NOISE -------------------------------->
-    <div class="noise"></div>
-    
-    <!-------------------------------- CURSOR -------------------------------->
-    <div id="cursor">
-      <div class="cursor__circle"></div>
-    </div>
+  <body>
 
-    <header>
+  <!-- <div> -->
+  <!-------------------------------- NOISE -------------------------------->
+  <div class="noise"></div>
+  
+  <!-------------------------------- CURSOR -------------------------------->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+
+  <div class="page-wrapper" data-scroll-container>
+
+    <header is-inview >
       <nav>
         <ul>
-          <li><a href="#">b.</a></li>
+          <li><a href="#hero" data-scroll-to>b.</a></li>
           <div class="nav__container">
-            <li class="hey">Works</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li><a href="#works" data-scroll-to>Works</a></li>
+            <li><a href="#about" data-scroll-to>About</a></li>
+            <li><a href="#skills" data-scroll-to>Skills</a></li>
+            <li><a href="#contact" data-scroll-to>Contact</a></li>
           </div>
           <li><p>(scroll)</p></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div data-scroll>
-        <section class="hero">
-          <h1>
-            <span>Boris</span>
-            <span>Tikhomiroff</span>
-            <span>Web developper,</span>
-            <span>based in France.</span>
-          </h1>
-        </section>
 
-        <section class="about">
-          <p>
-            Hey folks, I'm Boris a junior web developer currently studying web
-            development at <a target ="_blank" href="https://laplateforme.io/">La Plateforme school.</a> </br>Since then, I have been learning to build and design websites with love and passion. </br>
-            I'm looking for an internship in September 2022!
-          </p>
-        </section>
+    <main data-scroll-section>
+      <section class="hero" id="hero" data-scroll>
+        <h1>
+          <span>Boris</span>
+          <span>Tikhomiroff</span>
+          <span>Web developper,</span>
+          <span>based in France.</span>
+        </h1>
+      </section>
 
-        <div class="content">
+      <section class="about" id="about" data-scroll>
+        <p>
+          Hey folks, I'm Boris a junior web developer currently studying web
+          development at <a target ="_blank" href="https://laplateforme.io/">La Plateforme school.</a> </br>Since then, I have been learning to build and design websites with love and passion. </br>
+          I'm looking for an internship in September 2022!
+        </p>
+      </section>
 
-          
+      <div class="content" data-scroll>
 
-          <div class="item" id="works">
-            <div class="item__img-wrap">
-              <a
-                href="https://thomas-doan.students-laplateforme.io/boutique-en-ligne/"
-                target="_blank"
-              >
-                <div class="item__img item__img--t1"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Boutique en Ligne</h2>
-              <p class="item__caption-copy">
-                Online shop - PHP. 
-              </p>
-            </div>
+        <div class="item" id="works">
+          <div class="item__img-wrap">
+            <a
+              href="https://thomas-doan.students-laplateforme.io/boutique-en-ligne/"
+              target="_blank"
+            >
+              <div class="item__img item__img--t1"></div>
+            </a>
           </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://laura-savickaite.students-laplateforme.io/projets/confiancecosmetiques/"
-                target="_blank"
-              >
-                <div class="item__img item__img--t2"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Projet Hackathon</h2>
-              <p class="item__caption-copy">
-                Project achieve during an hackathon.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://github.com/boris-tikhomiroff/reservation-salles"
-                target="_blank"
-              >
-                <div class="item__img item__img--t3"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Reservation Salle</h2>
-              <p class="item__caption-copy">
-                Room reservation system - PHP.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://github.com/laura-savickaite/voyages"
-                target="_blank"
-              >
-                <div class="item__img item__img--t1"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Blog Voyage</h2>
-              <p class="item__caption-copy">
-                Travel blog.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://github.com/boris-tikhomiroff/module-connexion"
-                target="_blank"
-              >
-                <div class="item__img item__img--t2"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Module de Connexion</h2>
-              <p class="item__caption-copy">
-                First project in PHP.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://github.com/boris-tikhomiroff/livre-or"
-                target="_blank"
-              >
-                <div class="item__img item__img--t3"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Livre d'Or</h2>
-              <p class="item__caption-copy">
-                Guestbook in PHP.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__img-wrap">
-              <a
-                href="https://github.com/laura-savickaite/botanique"
-                target="_blank"
-              >
-                <div class="item__img item__img--t1"></div>
-              </a>
-            </div>
-            <div class="item__caption">
-              <h2 class="item__caption-title">Blog Botanique</h2>
-              <p class="item__caption-copy">
-                First project of the year, html and css discovery.
-              </p>
-            </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Boutique en Ligne</h2>
+            <p class="item__caption-copy">
+              Online shop - PHP. 
+            </p>
           </div>
         </div>
-
-        <section id="skills" class="skills">
-          <div class="grid">
-            <div class="skills__heading">
-              <h3>Skills</h3>
-              <p>
-                During this first year of school, I discovered the main web technologies.
-                I am passionate about the front-end web developpement.
-              </p>
-            </div>
-            <div class="skills__competence">
-              <div>
-                <h3>Front-End</h3>
-                <p>
-                  JAVASCRIPT / HTML / CSS / SASS / WEBGL / FIGMA / WORDPRESS /
-                  JQUERY
-                </p>
-              </div>
-              <div>
-                <h3>Back-End</h3>
-                <p>PHP / MySQL / GIT / DATABASE DESIGN / MVC</p>
-              </div>
-              <div>
-                <h3>Interest</h3>
-                <p>THREE JS / REACT / SYMPHONY</p>
-              </div>
-            </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://laura-savickaite.students-laplateforme.io/projets/confiancecosmetiques/"
+              target="_blank"
+            >
+              <div class="item__img item__img--t2"></div>
+            </a>
           </div>
-        </section>
-
-        <section class="contact">
-          <div class="contact__container">
-          <p class="contact__text">If you have any questions, please do not hesitate to contact me. </p>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Projet Hackathon</h2>
+            <p class="item__caption-copy">
+              Project achieve during an hackathon.
+            </p>
+          </div>
         </div>
-
-          <ul class="logo">
-            <li><a href="https://github.com/boris-tikhomiroff"><img src="./src/images/github_logo.svg" alt=""></a></li>
-            <li><a href="https://www.linkedin.com/in/boris-tikhomiroff-30936213b/"><img src="./src/images/linkedin_logo.svg" alt=""></a></li>
-            <li><a href="mailto:boristikhomiroff@gmail.com"><img src="./src/images/mail_logo.svg" alt=""></a></li>
-            <li><a href="src/images/Boris-Tikhomiroff_Cv.pdf" target="_blank" download><img src="./src/images/cv_logo.png" alt=""></a></li>
-          </ul>
-
-        </section>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://github.com/boris-tikhomiroff/reservation-salles"
+              target="_blank"
+            >
+              <div class="item__img item__img--t3"></div>
+            </a>
+          </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Reservation Salle</h2>
+            <p class="item__caption-copy">
+              Room reservation system - PHP.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://github.com/laura-savickaite/voyages"
+              target="_blank"
+            >
+              <div class="item__img item__img--t1"></div>
+            </a>
+          </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Blog Voyage</h2>
+            <p class="item__caption-copy">
+              Travel blog.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://github.com/boris-tikhomiroff/module-connexion"
+              target="_blank"
+            >
+              <div class="item__img item__img--t2"></div>
+            </a>
+          </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Module de Connexion</h2>
+            <p class="item__caption-copy">
+              First project in PHP.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://github.com/boris-tikhomiroff/livre-or"
+              target="_blank"
+            >
+              <div class="item__img item__img--t3"></div>
+            </a>
+          </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Livre d'Or</h2>
+            <p class="item__caption-copy">
+              Guestbook in PHP.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__img-wrap">
+            <a
+              href="https://github.com/laura-savickaite/botanique"
+              target="_blank"
+            >
+              <div class="item__img item__img--t1"></div>
+            </a>
+          </div>
+          <div class="item__caption">
+            <h2 class="item__caption-title">Blog Botanique</h2>
+            <p class="item__caption-copy">
+              First project of the year, html and css discovery.
+            </p>
+          </div>
+        </div>
+        
       </div>
+
+      <section id="skills" class="skills" data-scroll>
+        <div class="grid">
+          <div class="skills__heading">
+            <h3>Skills</h3>
+            <p>
+              During this first year of school, I discovered the main web technologies.
+              I am passionate about the front-end web developpement.
+            </p>
+          </div>
+          <div class="skills__competence">
+            <div>
+              <h3>Front-End</h3>
+              <p>
+                JAVASCRIPT / HTML / CSS / SASS / WEBGL / FIGMA / WORDPRESS /
+                JQUERY
+              </p>
+            </div>
+            <div>
+              <h3>Back-End</h3>
+              <p>PHP / MySQL / GIT / DATABASE DESIGN / MVC</p>
+            </div>
+            <div>
+              <h3>Interest</h3>
+              <p>THREE JS / REACT / SYMPHONY</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <script src="src/js/imagesloaded.pkgd.min.js"></script>
+    <footer class="contact" data-scroll-section id="contact">
+
+      <div class="contact__container" data-scroll>
+        <p class="contact__text" data-scroll>If you have any questions, please do not hesitate to contact me. </p>
+        <ul class="logo" data-scroll>
+          <li data-scroll><a href="https://github.com/boris-tikhomiroff" target="_blank"><img src="./src/images/github_logo.svg" alt=""></a></li>
+          <li data-scroll><a href="https://www.linkedin.com/in/boris-tikhomiroff-30936213b/" target="_blank"><img src="./src/images/linkedin_logo.svg" alt=""></a></li>
+          <li data-scroll><a href="mailto:boristikhomiroff@gmail.com" target="_blank"><img src="./src/images/mail_logo.svg" alt=""></a></li>
+          <li data-scroll><a href="src/images/Boris-Tikhomiroff_Cv.pdf" target="_blank" download><img src="./src/images/cv_logo.png" alt=""></a></li>
+        </ul>
+      </div>
+
+
+    </footer>
+
+
+  </div>
+  
+    <!-- <script src="src/js/imagesloaded.pkgd.min.js"></script> -->
+    <script src="src/js/locomotive-scroll.js"></script>
     <script src="src/js/app.js"></script>
     <script src="src/js/mouseFollower.js"></script>
   </body>
