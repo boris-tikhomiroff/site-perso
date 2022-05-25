@@ -324,39 +324,49 @@ h1 {
   width: 1000px;
   -o-object-fit: cover;
      object-fit: cover;
-  --image: url(../images/boutique-en-ligne1.png);
+  --image: url(../images/autocompletion-landing.png);
 }
 
 .item:nth-child(2) .item__img-wrap {
   width: 1000px;
   -o-object-fit: cover;
      object-fit: cover;
-  --image: url(../images/projet-hackathon1.png);
+  --image: url(../images/Oclock-landing.png);
 }
 
 .item:nth-child(3) .item__img-wrap {
   width: 1000px;
   -o-object-fit: cover;
      object-fit: cover;
-  --image: url(../images/reservation-salle2.jpeg);
+  --image: url(../images/boutique-en-ligne1.png );
 }
 
 .item:nth-child(4) .item__img-wrap {
   width: 1000px;
-  --image: url(../images/voyage-landing.png);
+  --image: url(../images/projet-hackathon1.png);
 }
 
 .item:nth-child(5) .item__img-wrap {
   width: 1000px;
-  --image: url(../images/module-co.jpeg);
+  --image: url(../images/reservation-salle2.jpeg);
 }
 
 .item:nth-child(6) .item__img-wrap {
   width: 1000px;
-  --image: url(../images/livre-or.png);
+  --image: url(../images/voyage-landing.png);
 }
 
 .item:nth-child(7) .item__img-wrap {
+  width: 1000px;
+  --image: url(../images/module-co.jpeg);
+}
+
+.item:nth-child(8) .item__img-wrap {
+  width: 1000px;
+  --image: url(../images/livre-or.png);
+}
+
+.item:nth-child(9) .item__img-wrap {
   width: 1000px;
   --image: url(../images/botanique-landing.png);
 }
